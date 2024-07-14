@@ -1,0 +1,56 @@
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 150px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card.hearts,
+.card.diamonds {
+  color: red;
+}
+
+.card.clubs,
+.card.spades {
+  color: black;
+}
+
+.card .value,
+.card .suit {
+  font-size: 24px;
+}
+
+.card .suit {
+  font-size: 48px;
+  margin-top: -10px;
+}
+
+.card .corner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card .corner.bottom {
+  top: auto;
+  bottom: 10px;
+  left: auto;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.empty {
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

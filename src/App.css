@@ -1,0 +1,47 @@
+.app {
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.card.hearts,
+.card.diamonds {
+  color: red;
+}
+
+.card.clubs,
+.card.spades {
+  color: black;
+}
+
+.empty {
+  color: gray;
+}
+
+.no-cards {
+  color: red;
+}
